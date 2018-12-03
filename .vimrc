@@ -11,6 +11,12 @@
 syntax on
 set spelllang=en
 
+" Relative Numbers
+set nocompatible
+filetype plugin on
+set encoding=utf-8
+set number relativenumber
+
 " Tabbing
 set tabstop=2
 set softtabstop=2
@@ -35,9 +41,9 @@ nnoremap $ <nop>
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'myusuf3/numbers.vim'
-Plug 'xuhdev/vim-latex-live-preview'
+Plug 'junegunn/goyo.vim'
 Plug '~/.fzf' " junegunn/fzf
+Plug 'xuhdev/vim-latex-live-preview'
 call plug#end()
 
 " NERDTree
