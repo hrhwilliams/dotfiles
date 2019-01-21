@@ -1,0 +1,43 @@
+URxvt.scrollBar : false
+URxvt.font: xft:curie:size=12
+URxvt.letterSpace: 1
+
+! Special
+URxvt.foreground:   #c5c8c6
+URxvt.cursorColor:  #c5c8c6
+URxvt.inheritPixmap: true
+URxvt.transparent: true
+! URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt.shading: 20
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #bf4040
+*.color9:       #d27e7e
+
+! green
+*.color2:       #8c9440
+*.color10:      #cad37b
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0d174
+
+! blue
+*.color4:       #5f819d
+*.color12:      #8197be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b084bd
+
+! cyan
+*.color6:       #56b78b
+*.color14:      #96e6c5
+
+! white
+*.color7:       #707880
+*.color15:      #e2ddc9

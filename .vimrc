@@ -44,6 +44,7 @@ Plug 'scrooloose/syntastic'
 Plug 'junegunn/goyo.vim'
 Plug '~/.fzf' " junegunn/fzf
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 " NERDTree
@@ -57,13 +58,7 @@ let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
 
 " Additional C++ syntax highlighting
-autocmd FileType cpp syn keyword Statement std
 autocmd FileType cpp syn keyword Type string
-
-" Additional C syntax highlighting
-autocmd FileType c syn keyword Statement malloc
-autocmd FileType c syn keyword Statement calloc
-autocmd FileType c syn keyword Statement free
 
 " New file templates
 autocmd BufNewFile *.h r $HOME/.vim/templates/header
