@@ -31,11 +31,11 @@ set showmatch
 nnoremap j gj
 nnoremap k gk
 
-nnoremap B ^
-nnoremap E $
-nnoremap ^ <nop>
-nnoremap $ <nop>
-
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -56,9 +56,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
-
-" Additional C++ syntax highlighting
-autocmd FileType cpp syn keyword Type string
 
 " New file templates
 autocmd BufNewFile *.h r $HOME/.vim/templates/header
